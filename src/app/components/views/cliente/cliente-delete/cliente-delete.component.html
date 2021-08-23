@@ -1,1 +1,27 @@
-<p>cliente-delete works!</p>
+<form>
+    <h1>DELETANDO CLIENTE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Razão Social</mat-label>
+        <input matInput [(ngModel)]="cliente.razaoSocial" type="text" name="razaoSocial" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>CNPJ</mat-label>
+        <input matInput [(ngModel)]="cliente.cnpj" type="text" name="cnpj" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Regime Tributário</mat-label>
+        <input matInput [(ngModel)]="cliente.tipoRegimeTributario" type="text" name="tipoRegimeTributario" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="cliente.email" type="text" name="email" disabled>
+    </mat-form-field>
+
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

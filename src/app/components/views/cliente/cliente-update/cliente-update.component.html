@@ -1,1 +1,27 @@
-<p>cliente-update works!</p>
+<form>
+    <h1>ATUALIZANDO CLIENTE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Razão Social</mat-label>
+        <input matInput [(ngModel)]="cliente.razaoSocial" type="text" name="razaoSocial" placeholder="Ex. Unimed Ceará">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>CNPJ</mat-label>
+        <input matInput [(ngModel)]="cliente.cnpj" type="text" name="cnpj" placeholder="Ex. 10.395.358/0001-14">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Regime Tributário</mat-label>
+        <input matInput [(ngModel)]="cliente.tipoRegimeTributario" type="text" name="tipoRegimeTributario" placeholder="Ex. Lucro Presumido ou Simples Nacional">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="cliente.email" type="text" name="email" placeholder="Ex. unimed.Ceara@gmail.com">
+    </mat-form-field>
+
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

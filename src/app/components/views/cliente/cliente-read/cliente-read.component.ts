@@ -12,8 +12,9 @@ export class ClienteReadComponent implements OnInit {
 
   clientes: Cliente[] = [];
   
-  displayedColumns: string[] = ['id', 'razaoSocial', 'acoes'];
+  displayedColumns: string[] = ['id', 'razaoSocial', 'email', 'cnpj', 'tipoRegimeTributario', 'acoes'];
 
+   
   constructor( private service: ClienteService, private router: Router ) { }
 
   ngOnInit(): void {

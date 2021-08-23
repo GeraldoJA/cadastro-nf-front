@@ -11,8 +11,6 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
 
-import { ClienteReadComponent } from './components/views/cliente/cliente-read/cliente-read.component';
-
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
@@ -24,9 +22,12 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+
+import { ClienteReadComponent } from './components/views/cliente/cliente-read/cliente-read.component';
 import { ClienteCreateComponent } from './components/views/cliente/cliente-create/cliente-create.component';
 import { ClienteDeleteComponent } from './components/views/cliente/cliente-delete/cliente-delete.component';
 import { ClienteUpdateComponent } from './components/views/cliente/cliente-update/cliente-update.component';
+
 
 @NgModule({
   declarations: [
@@ -37,9 +38,9 @@ import { ClienteUpdateComponent } from './components/views/cliente/cliente-updat
     HomeComponent,
 
     ClienteReadComponent,
-     ClienteCreateComponent,
-     ClienteDeleteComponent,
-     ClienteUpdateComponent
+    ClienteCreateComponent,
+    ClienteDeleteComponent,
+    ClienteUpdateComponent
   ],
   imports: [
     BrowserModule,
