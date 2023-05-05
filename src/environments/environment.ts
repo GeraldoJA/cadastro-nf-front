@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'cadastronf-api-production.up.railway.app'
+  baseUrl: 'https://cadastronf-api-production.up.railway.app/'
 };
 
 /*

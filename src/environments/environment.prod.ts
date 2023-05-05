@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'cadastronf-api-production.up.railway.app'
+  baseUrl: 'https://cadastronf-api-production.up.railway.app/'
 };
