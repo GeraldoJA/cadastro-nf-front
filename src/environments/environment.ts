@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://cadastro-nf-api.herokuapp.com/'
+  baseUrl: 'cadastronf-api-production.up.railway.app'
 };
 
 /*
